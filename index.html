@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV to HTML</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+  <div class="container-fluid">
+   <div class="table-responsive" style="overflow-x: visible">
+    <h1 align="center">CSV File to TABLE</h1>
+    <br />
+    <div align="center">
+     <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
+     <button type="button" class="btn btn-info" onclick="tableToCSV()">Download Html table in CSV</button>
+     <input type="text" id="myInput" onkeyup="tableFilter()"  placeholder="Search for names.." title="Type in a name">
+    </div>
+    </div>
+    <br />
+    <div id="html_table">
+    </div>
+   </div>
+  </div>
+  <script src="main.js"></script>
+ </body>
+</html>
